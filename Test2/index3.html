@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework3</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+</head>
+<body>
+<img  id="div2" src="a.jpg">
+<div style="margin-top: 5%">
+    <button id="div1" style="font-size: xx-large;background-color: #e8e8e8" >hey</button>
+</div>
+<script>
+    $(document).ready(function(){
+        $("#div1").click(function(){
+            $.get("b.jpg",function(){
+                $("#div2").attr("src","b.jpg");
+            })
+        });
+    });
+</script>
+
+
+</body>
+</html>
